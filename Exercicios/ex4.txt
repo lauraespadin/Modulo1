@@ -1,0 +1,11 @@
+int Salgadinho = 2;
+double PrecoSalgadinho = 3.5;
+int Refrigerante = 1;
+double PrecoRefrigerante = 4.0;
+double CustoSalgadinho = Salgadinho * PrecoSalgadinho;
+double CustoRefrigerante = Refrigerante * PrecoRefrigerante;
+double ValorCompra = CustoSalgadinho + CustoRefrigerante;
+
+Console.WriteLine($"Custo Salgadinho {CustoSalgadinho:F2}");
+Console.WriteLine($"Custo Refrigerante {CustoRefrigerante:F2}");
+Console.WriteLine($"Valor total: {ValorCompra:F2}");

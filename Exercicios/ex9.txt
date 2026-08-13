@@ -1,0 +1,19 @@
+int tipoTrajeto = 3;
+switch (tipoTrajeto)
+{
+    case 1:
+        Console.WriteLine("Trajeto escolhido: 1 Curto");
+        Console.WriteLine("Sugestão: Vá a pé ou de bicicleta.");
+        break;
+    case 2:
+        Console.WriteLine("Trajeto escolhido: 2 Médio");
+        Console.WriteLine("Sugestão: Use transporte público ou carro.");
+        break;
+    case 3:
+        Console.WriteLine("Trajeto escolhido: 3 Longo");
+        Console.WriteLine("Sugestão: Considere avião ou ônibus de viagem.");
+        break;
+    default:
+        Console.WriteLine("Trajeto inválido.");
+        break;
+}

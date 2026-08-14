@@ -1,0 +1,38 @@
+onsole.WriteLine("Verificando o preço:\n");
+double preco1 = 67;
+double preco2 = 30;
+
+int promo = 30;
+
+VerificarPrecoPromocional(preco1, promo);
+if (preco1 <= promo)
+{
+    Console.WriteLine($"Valor do produto: R${preco1:F2}. Valor da Promo: R${promo:F2}. O produto está em promoção!\n");
+}
+else
+{
+    Console.WriteLine($"Valor do produto: R${preco1:F2}. Valor da Promo: R${promo:F2}. O produto não está em promoção.\n");
+}
+
+VerificarPrecoPromocional(preco2, promo);
+if (preco2 <= promo)
+{
+    Console.WriteLine($"Valor do produto: R${preco2:F2}. Valor da Promo: R${promo:F2}. O produto está em promoção!\n");
+}
+else
+{
+    Console.WriteLine($"Valor do produto: R${preco2:F2}. Valor da Promo: R${promo:F2}. O produto não está em promoção.\n");
+}
+
+static bool VerificarPrecoPromocional(double precoProduto, int precoPromocao)
+{
+    if (precoProduto <= precoPromocao)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+
+}
